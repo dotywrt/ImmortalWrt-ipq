@@ -179,9 +179,4 @@ define Build/Compile
 		$(UBOOT_MAKE_FLAGS)
 endef
 
-define Build/InstallDev
-	$(INSTALL_DIR) $(STAGING_DIR_IMAGE)
-	$(INSTALL_DATA) $(PKG_BUILD_DIR)/$(UBOOT_IMAGE) $(STAGING_DIR_IMAGE)/$(BUILD_VARIANT)-$(UBOOT_IMAGE)
-endef
-
 $(eval $(call BuildPackage/U-Boot))

@@ -43,7 +43,6 @@ endef
 define Trusted-Firmware-A/Default
   BUILD_TARGET:=layerscape
   BUILD_SUBTARGET:=armv8_64b
-  BUILD_DEVICES:=fsl_$(1)
   DEPENDS:=+layerscape-rcw +u-boot-fsl_$(1)
 endef
 

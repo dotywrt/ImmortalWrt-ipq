@@ -26,8 +26,6 @@ define Package/layerscape-dpl
   CATEGORY:=Firmware
   TITLE:=NXP DPL firmware
   DEPENDS:=@TARGET_layerscape
-  DEFAULT:=y if TARGET_layerscape_armv8_64b
-  HIDDEN:=1
 endef
 
 MAKE_PATH:=config
